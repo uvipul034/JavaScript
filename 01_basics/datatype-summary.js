@@ -34,3 +34,27 @@ let myObj = {               // Object
 const myFunction = function(){
     console.log("Hello Country");
 }
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack(Primitive), Heap(Non-Primitive)
+
+let myVillagename ="Khera Chaugawan" // stored in stack memory
+
+let anotherName = myVillagename // stored in stack memory
+anotherName = "Antwara" 
+console.log(myVillagename); // output will be Khera Chaugawan bcz primitive data types are stored in stack memory and they are immutable in nature
+console.log(anotherName); 
+
+let userOne = {
+    email: "vasu@google.com",
+    upi: "vasu@ybl"
+}
+
+let userTwo = userOne // stored in heap memory
+userTwo.email = "bachu@google.com"
+
+console.log(userOne.email); // output will be bachu@google.com bcz non-primitive data types are stored in heap memory and they are mutable in nature
+console.log(userTwo.email); // output will be bachu@google.com bcz non-primitive data types are stored in heap memory and they are mutable in nature
