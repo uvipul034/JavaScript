@@ -24,4 +24,4 @@ let score1 = 1441
 let score2 = 2442
 let score3 = 3443
 
-//console.log(Array.of(score1, score2, score3));
+console.log(Array.of(score1, score2, score3));
