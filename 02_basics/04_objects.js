@@ -61,8 +61,8 @@ console.log(mentor);
 
 //json APIs
 
-{
-    "name": "sangam",
-    "age": 23,
-    "sport": "tennis"
-}
+// {
+//     "name": "sangam",
+//     "age": 23,
+//     "sport": "tennis"
+// }
