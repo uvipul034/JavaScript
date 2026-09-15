@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangam</title>
+</head>
+<body style = "background-color: #212121; color: #fff;">
+    <ul class ="language">
+       <li>Javascipt</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+ const li = document.createElement('li');
+ li.innerHTML = `${langName}`
+ document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("TypeScript")
+    addLanguage("Urdu")
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('Ruby')
+
+   // Editing the values
+   const secondLang = document.querySelector("li:nth-child(2)")
+   const newli = document.createElement('li')
+   newli.textContent = "React"
+   secondLang.replaceWith(newli)
+
+   //edit
+const firstLang = document.querySelector("li:first-child")
+const newerli = document.createElement('li')
+newerli.textContent = "TypeScript"
+firstLang.replaceWith(newerli)
+
+// Deleting the values
+
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
+
+</script>
+</html>
