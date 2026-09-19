@@ -1,0 +1,86 @@
+body{
+    background-color: #212121;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+nav  { 
+     padding: 20px;
+     background-color: #1a1a1a;
+     margin-bottom: 40px;
+}
+nav a { 
+     color: #fff;
+     text-decoration: none;
+     margin-right: 20px;
+     font-size: 18px;
+}
+nav a:hover{
+    text-decoration: underline;
+    text-align: center;
+
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: #3f3c3c;
+    color: #fff;
+    padding: #2b302c;
+    border: 30px;
+    border-radius: 8px;
+    width: 320px;
+}
+
+.container h1{
+   font-size: 22px;
+   margin-top: 0;
+   margin-bottom: 25px;
+}
+
+form p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input{
+    width: 140px;
+    padding: 4px;
+    border: 1px, solid #fff;
+    border-radius: 3px;
+    color:#000;
+}
+
+button{
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+ #results{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 25px;
+    color: #f4f8f5;
+ }
+ #weight-guide{
+    margin-top: 30px;
+ }
+
+ #weight-guide h3{
+      font-size: 16px;
+      margin-bottom: 15px;
+ }
+
+ #weight-guide p{
+    font-size: 14px;
+    margin: 8px, 0;
+ }
