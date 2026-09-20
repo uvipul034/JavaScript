@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style ="background-color: #000; color: #fff;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id = "images">
+            <li> <img width = 100px id = "seagull" src =
+             "https://images.pexels.com/photos/39320552/pexels-photo-39320552.jpeg?_gl=1*13gwtx0*_g
+            a*MTAyOTcyODgyOS4xNzgyMDE5OTUw*_ga_8JE65Q40S6*czE3ODk4ODgyN
+             zIkbzQkZzEkdDE3ODk4ODg1NzEkajU5JGwwJGgw" alt = "photoshop"></li>
+            <li> <img width = 100px id = "Vintage car" src = "https://images.pexels.com/photos/39478856/pexels-photo-39478856.jpeg?_gl=1*1shsmxw*_ga*MTAyOTcyODgyOS4xNzgyMDE5OTUw*_ga_8JE65Q40S6*czE3ODk5MDkxMjgkbzUkZzEkdDE3ODk5MDk2ODUkajU5JGwwJGgw" alt = ""></li>
+            <li> <img width = 100px id = "mare" src = "https://images.pexels.com/photos/38132851/pexels-photo-38132851.jpeg?_gl=1*q8y2qx*_ga*MTAyOTcyODgyOS4xNzgyMDE5OTUw*_ga_8JE65Q40S6*czE3ODk5MDkxMjgkbzUkZzEkdDE3ODk5MDk2ODUkajU5JGwwJGgw" alt = ""></li>
+            <li> <img width = 100px id = "waterLily" src = "https://images.pexels.com/photos/39217503/pexels-photo-39217503.jpeg?_gl=1*197fgea*_ga*MTAyOTcyODgyOS4xNzgyMDE5OTUw*_ga_8JE65Q40S6*czE3ODk5MDkxMjgkbzUkZzEkdDE3ODk5MDkzNzAkajU5JGwwJGgw" alt = ""></li>
+            <li> <a style = "color: red;" href="http://google.com" id = "google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('mare').onclick = function(){
+    //     alert("Mare Clicked");
+    // }   This is not a good practice
+    //// type, timestamp, defaultPrevented
+    // target, toElement, srcElement
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('seagull').addEventListener('click', function(e){
+    //     console.log("Seagull clicked");
+    // }, false)
+    // document.getElementById('waterLily').addEventListener('click', function(e){
+    //     console.log("Waterlily Clicked");
+    // }, false)
+    // // capturing and bubbling
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("Google Clicked");
+    //}, false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+            removeIt.remove();
+        }
+    })
+</script>
+</html>
